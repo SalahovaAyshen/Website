@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 * {
     padding: 0%;
     margin: 0%;
@@ -9,7 +10,9 @@
     width: 100%;
     height: 100vh;
     background-color:black; 
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif;
+     */
+    font-family: 'Playfair Display', serif;
    /* display: flex;  */
     align-items: center; 
     justify-content: center; 
@@ -25,7 +28,7 @@ header {
     height: 80%;
     /* border:1px solid white; */
     border-radius: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0px 0px 25px -2px #7bb314;
     overflow: auto;
     background-color: rgb(40, 38, 38);
@@ -118,18 +121,25 @@ header  .row .card .img{
     border-radius: 20px;
     /* opacity: 0.7; */
 }
+header  .row .card .img:hover{
+  filter:contrast();
+  /* opacity:; */
+}
+
 
 header .row button {
     opacity: 0;
     position: absolute;
-    width: 200px;
+    width: 100px;
     height: 40px;
     top: 150px;
-    background: rgba(74, 70, 70, 0.3);
-    left: calc(50% - 100px);
+    background: rgba(8, 30, 7, 0.3);
+    left: calc(50% - 50px);
     color:#fff;
-    transition: opacity .2s;
+    transition: opacity 0.7s;
+    border-radius: 10px;
 }
+
 .card:hover button {
     opacity: 1;
     transition: opacity .3s;

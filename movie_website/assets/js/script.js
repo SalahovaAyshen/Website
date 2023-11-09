@@ -5,8 +5,8 @@ function FillHtml(data) {
     data.forEach(movie => {
         row.innerHTML += 
         `
-        <div class="card col-3 m-2" style="width: 17rem;">
-        <img class="img pt-1" src="${movie.image.medium}" class="card-img-top" alt="${movie.name}">
+        <div class="card col-3 m-2" style="width: 16rem;">
+        <img class="img pt-2" src="${movie.image.medium}" class="card-img-top" alt="${movie.name}">
         
         <div class="card-body">
           <h5 class="card-title fw-bold">${movie.name}</h5>
