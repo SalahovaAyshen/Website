@@ -1,5 +1,4 @@
 
-
 var row = document.getElementsByClassName("movies")[0]
 
 function FillHtml(data) {
@@ -8,10 +7,13 @@ function FillHtml(data) {
         `
         <div class="card col-3 m-2" style="width: 17rem;">
         <img class="img pt-1" src="${movie.image.medium}" class="card-img-top" alt="${movie.name}">
+        
         <div class="card-body">
           <h5 class="card-title fw-bold">${movie.name}</h5>
           <p class="card-text fw-bold">${movie.rating.average}</p>
-        
+         
+          <a href="details.html?id=${movie.id}"><button>View details</button></a>
+
         </div>
         </div>
         `

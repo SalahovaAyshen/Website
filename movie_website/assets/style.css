@@ -108,6 +108,7 @@ nav .input_search input::placeholder{
     
 }
 
+
 header  .row .card{
     background-color: #2b3c0c;
     color:white;
@@ -115,4 +116,21 @@ header  .row .card{
 }
 header  .row .card .img{
     border-radius: 20px;
+    /* opacity: 0.7; */
+}
+
+header .row button {
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 150px;
+    background: rgba(74, 70, 70, 0.3);
+    left: calc(50% - 100px);
+    color:#fff;
+    transition: opacity .2s;
+}
+.card:hover button {
+    opacity: 1;
+    transition: opacity .3s;
 }
