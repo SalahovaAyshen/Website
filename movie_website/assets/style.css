@@ -92,7 +92,7 @@ nav .input_search input{
     border-radius: 20px;
     border: none;
     outline: none;
-    width: 250px;
+    width: 180px;
     background: rgb(255,255,255,.3);
     color: white;
     margin-right: 10px;
@@ -144,3 +144,7 @@ header .row button {
     opacity: 1;
     transition: opacity .3s;
 }
+
+/* .card .card-title.hide{
+    display:none;
+} */
