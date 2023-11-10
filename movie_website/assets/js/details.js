@@ -13,7 +13,7 @@ axios.get(`https://api.tvmaze.com/shows/${id}`)
    
     <div class="p-1">
     <button type="button" class="trailer">
-    <a href="${response.dataofficialSite}">
+    <a href="${response.data.officialSite}">
     official site
     </a>
     </button>
@@ -26,7 +26,7 @@ axios.get(`https://api.tvmaze.com/shows/${id}`)
     <div class="premiered">Premiered: ${response.data.premiered}</div>
     <div class="status">Status: ${response.data.status}</div>
     <div class="language">Language: ${response.data.language}</div>
-    <div class="rating">IMDb: ${response.data.rating.average}</div>
+    <div class="rating">  IMDb: ${response.data.rating.average}</div>
     <div class="genre">Genre: ${response.data.genres}</div>
     <div class="time">Time: ${response.data.averageRuntime}</div>
     </div>
