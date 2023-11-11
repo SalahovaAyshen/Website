@@ -78,6 +78,9 @@ nav{
     justify-content: space-between;
     /* padding: 0 50px; */
 }
+.flixzet .flix{
+    color:white
+}
 
 .flixzet .zet{
     color:#7bb314;
@@ -94,11 +97,11 @@ nav .input_search input{
     outline: none;
     width: 180px;
     background: rgb(255,255,255,.3);
-    color: white;
+    color: black;
     margin-right: 10px;
 }
 nav .input_search input::placeholder{
-    color: #f6f7f4;
+    color:black;
     
 }
  nav .input_search img{
@@ -148,3 +151,58 @@ header .row button {
 /* .card .card-title.hide{
     display:none;
 } */
+
+/* .input_search{
+    background-color: var(--md-dark-color);
+    height: 180px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.toggle{
+    /* padding-left: px; */
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-icon{
+    color: goldenrod;
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    left: 1px;
+    border-radius: 50px;
+}
+
+.body.active{
+    background-color: white;
+    color:black;
+}
+header.active{
+    background-color: rgb(95, 94, 94);
+}
+
+.flix.active{
+    color:black;
+}
+.input_search input.active{
+    color:black;
+    background: gray;
+}
+
+.toggle.active{
+    background-color: black;
+}
+.toggle-ball.active{
+    background-color: white;
+    transform:translateX(20px);
+}

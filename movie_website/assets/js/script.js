@@ -5,8 +5,7 @@ function FillHtml(data) {
         row.innerHTML += 
         `
         <div class="card col-3 m-2" style="width: 16rem;">
-        <img class="img pt-2" src="${movie.image.medium}" class="card-img-top" alt="${movie.name}"  onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
-        onmouseover="this.style.opacity=0.9;this.filters.alpha.opacity=60">
+        <img class="img pt-2" src="${movie.image.medium}" class="card-img-top" alt="${movie.name}">
         
         <div class="card-body">
           <h5 class="card-title fw-bold">${movie.name}</h5>
@@ -37,3 +36,14 @@ $.ajax({
 //         return s.movie.name.match(regex);
 //     })
 // }
+
+const ball=document.querySelector(".toggle-ball");
+const items = document.querySelectorAll(".body,header,.flix,.input_search input,.toggle");
+
+ball.addEventListener("click",()=>{
+
+  items.forEach(item=>{
+    item.classList.toggle("active")
+  })
+  ball.classList.toggle("active")
+})

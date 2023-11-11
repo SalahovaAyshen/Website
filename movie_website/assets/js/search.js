@@ -1,7 +1,7 @@
 // const api = `https://api.tvmaze.com/shows`;
 // const movies = [];
 // const cardWrapper=document.querySelector(".movies");
-// // console.log("hello");
+// console.log("hello");
 
 // fetch(api)
 // .then(res => res.json())
@@ -50,7 +50,7 @@
 // }
 
 
-// const search = () => {
+// function search() {
 
 // const searchbox = document.getElementById("search").value.toUpperCase();
 // const movieitems = document.getElementsById("movies")
@@ -74,3 +74,5 @@
 //     }
 // }
 // }
+
+
