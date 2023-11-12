@@ -1,7 +1,5 @@
 var div = document.getElementsByClassName("movie-details")[0]
-// console.log();
 var id = window.location.search.slice(4);
-// console.log(id);
 axios.get(`https://api.tvmaze.com/shows/${id}`)
     .then(response => {
 
@@ -14,12 +12,12 @@ axios.get(`https://api.tvmaze.com/shows/${id}`)
     <div class="p-1">
     <button type="button" class="trailer">
     <a href="${response.data.officialSite}">
-    official site
+    Official site
     </a>
     </button>
     </div>
-   
     </div>
+
     <div class="col-8 p-3 pt-5">
     <div class="name">Name: ${response.data.name}</div>
     <div class="country">Country: ${response.data.network.country.name}</div>
@@ -32,10 +30,8 @@ axios.get(`https://api.tvmaze.com/shows/${id}`)
     </div>
     </div>
     <div class="pt-2">${response.data.summary}</div>
-    
-    
-    
+
     `
     }
     )
-    s
+    

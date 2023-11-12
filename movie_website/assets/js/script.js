@@ -28,14 +28,7 @@ $.ajax({
     url: "https://api.tvmaze.com/shows"
 }).done(data => FillHtml(data))
 
-
-// function getOptions(word, movie){
-//     return movie.filter(s =>{
-
-//         const regex = new RegExp(word, 'gi');
-//         return s.movie.name.match(regex);
-//     })
-// }
+/*Night and Light mode*/
 
 const ball=document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(".body,header,.flix,.input_search input,.toggle");
@@ -47,3 +40,32 @@ ball.addEventListener("click",()=>{
   })
   ball.classList.toggle("active")
 })
+
+
+/*Search*/
+let movies = document.getElementById("movies");
+let search_input = document.getElementById('search');
+search_input.addEventListener('keyup', ()=>{
+
+  let filter = search_input.value.toUpperCase().trim();
+  let a = movies.getElementsByClassName("card"); 
+
+  for (let i = 0; i < a.length; i++) {
+
+    let b = a[i].getElementsByClassName('card-title')[0];
+    
+    let TextValue = b.textContent || b.innerText;
+
+    if (TextValue.toUpperCase().trim().indexOf(filter) > -1) {
+
+      a[i].style.display = "flex";
+      movies.style.visibility = "visible";
+      movies.style.opacity=1;      
+    }
+    else{
+
+      a[i].style.display = "none";
+    }
+  }
+})
+
